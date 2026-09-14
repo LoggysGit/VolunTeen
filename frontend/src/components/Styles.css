@@ -1,0 +1,101 @@
+/* === SYSTEM STYLES === */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.vt-disable-transitions * {
+  transition: none !important;
+}
+
+
+/* === COLORS & STYLES === */
+
+:root {
+  /* Color Palette */
+
+  --pr-purple-900: #58105c;
+
+  --pr-green-700: #4a5b35;
+
+  --pr-coral-500: #c85a3f;
+
+  --pr-brown-900: #2d2a26;
+  --pr-brown-700: #5c5651;
+
+  --pr-cream-50: #fdfbf7;
+  --pr-cream-100: #f5ede2;
+  --pr-cream-200: #f9ece7;
+
+  --pr-purple-100: #e3d1e4;
+  --pr-purple-200: #d8b3da;
+
+  --pr-green-100: #ebf0e6;
+
+  --pr-border: #e2dacd;
+
+  --pr-white: #ffffff;
+
+
+  /* Typography */
+
+  --font-sans: 'Roboto', -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
+  --font-serif: 'Spectral', Georgia, serif;
+  --font-body-serif: 'Lora', Georgia, serif;
+
+
+  /* Effects */
+
+  --border-radius-sm: 12px;
+  --border-radius-md: 24px;
+  --border-radius-lg: 32px;
+  --border-radius-xl: 40px;
+  --border-radius-pill: 999px;
+
+  --shadow-card: 0 4px 20px rgba(45, 42, 38, 0.06);
+}
+
+
+/* === LIGHT THEME === */
+
+:root,
+:root[data-theme='light'] {
+
+  /* Surfaces & Backgrounds */
+
+  --color-background: var(--pr-cream-50);
+  --color-surface: var(--pr-white);
+  --color-surface-warm: var(--pr-cream-100);
+  --color-surface-soft: var(--pr-cream-200);
+
+  --color-surface-purple: var(--pr-purple-100);
+  --color-surface-purple-accent: var(--pr-purple-200);
+
+  --color-surface-green: var(--pr-green-100);
+
+
+  /* Typography & Icons */
+
+  --color-text: var(--pr-brown-900);
+  --color-text-secondary: var(--pr-brown-700);
+  --color-text-on-accent: var(--pr-white);
+
+
+  /* Accent & Branding */
+
+  --color-primary: var(--pr-purple-900);
+  --color-secondary: var(--pr-green-700);
+  --color-accent: var(--pr-coral-500);
+
+  --color-border: var(--pr-border);
+}
